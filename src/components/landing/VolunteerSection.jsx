@@ -13,12 +13,18 @@ export default function VolunteerSection() {
                   Licensed & Certified Volunteers
                 </h3>
                 <p className="font-body-md text-body-md text-secondary mb-8">
-                  We are looking for NPs, PAs, MDs, and certified health workers
-                  to provide clinical oversight and direct care.
+                  We are looking for EMT, CNA, RN, medical students, etc. to
+                  help in our clinics.
                 </p>
               </div>
               <button
                 type="button"
+                onClick={() => {
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSeqJgaRnPn8hwmFaCfrPz5clFL_nGL8-LQR5EN0BwSLf86xmA/viewform",
+                    "_blank",
+                  );
+                }}
                 className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-md btn-active"
               >
                 Apply as a Clinical Volunteer
@@ -30,12 +36,18 @@ export default function VolunteerSection() {
                   General & Student Volunteers
                 </h3>
                 <p className="font-body-md text-body-md text-secondary mb-8">
-                  Passionate students and community members are needed for
-                  logistics, patient intake, and health education.
+                  We are looking for general volunteers to help with logistics,
+                  patient intake, and health education.
                 </p>
               </div>
               <button
                 type="button"
+                onClick={() => {
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSf7xxaebO1wulO6__c5UtSgKeWEoevd50rXqkT0mIvi71-zuw/viewform?usp=sharing&ouid=110592658385078288158",
+                    "_blank",
+                  );
+                }}
                 className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active"
               >
                 Apply as a General Volunteer
@@ -45,5 +57,5 @@ export default function VolunteerSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
