@@ -1,0 +1,292 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Over 100 Screenings Completed | Project Pulse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fff8f3",
+                        "primary-fixed-dim": "#b2cead",
+                        "primary-fixed": "#cdebc8",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#464744",
+                        "on-secondary-container": "#67625e",
+                        "secondary": "#635d5a",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f4ece6",
+                        "on-secondary-fixed-variant": "#4b4642",
+                        "outline-variant": "#c3c8be",
+                        "tertiary-container": "#adada9",
+                        "tertiary": "#5e5f5b",
+                        "on-primary": "#ffffff",
+                        "primary": "#4b654a",
+                        "secondary-container": "#e6ded9",
+                        "on-tertiary-container": "#40413e",
+                        "inverse-primary": "#b2cead",
+                        "inverse-on-surface": "#f7efe9",
+                        "surface-container-high": "#efe7e0",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1e1b17",
+                        "secondary-fixed": "#e9e1dc",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#e3e3de",
+                        "on-background": "#1e1b17",
+                        "background": "#fff8f3",
+                        "tertiary-fixed-dim": "#c7c7c2",
+                        "surface": "#fff8f3",
+                        "on-tertiary-fixed": "#1b1c19",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#98b494",
+                        "on-secondary-fixed": "#1e1b18",
+                        "surface-variant": "#e9e1db",
+                        "outline": "#737970",
+                        "surface-container-highest": "#e9e1db",
+                        "surface-tint": "#4b654a",
+                        "surface-dim": "#e0d9d2",
+                        "inverse-surface": "#33302c",
+                        "on-primary-fixed-variant": "#344d33",
+                        "on-surface-variant": "#434841",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#faf2ec",
+                        "on-primary-fixed": "#09200b",
+                        "on-primary-container": "#2e462d",
+                        "secondary-fixed-dim": "#cdc5c0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "margin-desktop": "40px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["DM Sans"],
+                        "display-lg": ["DM Sans"],
+                        "label-sm": ["Manrope"],
+                        "headline-md": ["DM Sans"],
+                        "body-md": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["DM Sans"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .messy-card {
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.6s ease, z-index 0s linear 0.3s;
+            will-change: transform, opacity;
+        }
+        .messy-card.sending-to-back {
+            transform: scale(0.8) translateY(100px) rotate(-10deg) !important;
+            opacity: 0;
+            z-index: 0 !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<div class="fixed inset-0 grain-overlay z-[9999]"></div>
+<!-- TopNavBar -->
+<nav class="bg-background/80 backdrop-blur-md sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-6">
+<a class="font-headline-md text-headline-md font-bold text-on-background" href="#">Project Pulse</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#">Our Mission</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Latest News</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#">Upcoming Clinics</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#">Volunteer</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="pt-20 px-margin-mobile md:px-margin-desktop bg-surface-bright pb-12">
+<div class="max-w-container-max mx-auto">
+<div class="max-w-[800px]">
+<div class="flex items-center gap-4 mb-6">
+<span class="bg-primary/10 text-primary px-4 py-1 rounded-full font-label-sm text-label-sm">Community Milestone</span>
+<span class="text-on-surface-variant font-label-md text-label-md">October 5, 2024</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-[64px] md:leading-[72px] text-on-surface mb-8 tracking-tight">
+                        Over 100 Screenings Completed in Northside
+                    </h1>
+<div class="flex items-center gap-3 mb-12">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">edit_note</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface">By Project Pulse Editorial</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-[720px]">
+                        Last Saturday, the Northside community center buzzed with a different kind of energy. Amidst the usual weekend rhythms, our student-led team hit a landmark achievement, providing vital health diagnostics to our neighbors who need them most.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<section class="px-margin-mobile md:px-margin-desktop py-12">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Story Column -->
+<article class="lg:col-span-7 space-y-12">
+<div class="prose prose-stone max-w-none"><p class="font-body-lg text-body-lg text-on-surface mb-8 leading-loose">Last Saturday, Project Pulse reached a major milestone: our 100th community health screening. At the Northside Community Center, we transformed a simple morning into a life-changing event for dozens of our neighbors.</p><h3 class="font-headline-md text-headline-md text-on-surface mb-6">Key Outcomes</h3><ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface-variant">42 individuals received comprehensive health diagnostics in a single day.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Identified three critical cases of asymptomatic hypertension.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Connected high-risk patients directly with local primary care follow-ups.</p>
+</li>
+</ul><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">By bringing healthcare directly to the neighborhood, we're not just collecting data—we're saving lives through connection and education.</p></div>
+
+</article>
+<!-- Gallery Column -->
+<aside class="lg:col-span-5 relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="relative w-full h-full max-w-[400px]" id="card-stack">
+<!-- Card 4 -->
+<div class="messy-card absolute inset-0 bg-white p-4 shadow-xl rounded-xl border border-surface-container-high rotate-[2deg] z-10" data-index="3">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBo39ubPxK3l19PfwvSxXIuDybNOO3hhUNe9k_1y-SD-tWc2EYpiWq_NgnMXAC83vKW69Lfn1pKXjcRv5D6WVwQFoBhbNXXWq1BrnXtfAZLggitjnaV7jH6hNFGUdFBCkP2M4TmPG1FG3PPEMgaB7xSMgvIzViQucbNRyd4nhx0apEMH5JkOR9Z0dOBxHXM1dnWtlevtkftQGyZKJhJJCt0dnu-EXQMwvFg_Qh4hTcVIFsyQ6-GkYMdqIYOrZtLICUfwIc2mI8Ix4">
+</div>
+<p class="font-label-md text-label-md text-secondary italic">Ending the day with the team.</p>
+</div>
+<!-- Card 3 -->
+<div class="messy-card absolute inset-0 bg-white p-4 shadow-xl rounded-xl border border-surface-container-high -rotate-[3deg] translate-x-2 translate-y-2 z-20" data-index="2">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHFjcnNmf0pZIPvScISKFJfqvUFRCtPxOcEdG8AR8OlvclnZjtvRTawLmhTF3N_WRPeDyIhyN3CZgQw3EtwHb9vSRFMh2mYpncNb4z3dPSvB51Mjt3jkoPNbtgXNJeXohSGFmUfluKv4-BpWsvWwF9zycoxfjgGFL_W_LPFxic2UiPNRUHbxxZSeDeBYG9xCdcRS_o9U4Irh8J-u_CLffdeHLKKaeF8PQSopzzUsT4WrhPWGKIEtYI-6CHP6mBm3danHlqLxy7dYo">
+</div>
+<p class="font-label-md text-label-md text-secondary italic">A moment of patient education.</p>
+</div>
+<!-- Card 2 -->
+<div class="messy-card absolute inset-0 bg-white p-4 shadow-xl rounded-xl border border-surface-container-high rotate-[4deg] -translate-x-2 translate-y-4 z-30" data-index="1">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD81RwDgKOfv4W2DhiBuFqNciw32Vdsp5RSR4wbn54qptNZzZTaCZRM069eQbbQhfv0LmNqTDPCdIRSzGLt2SoxQE7imm0cGD9YK-Y01BiZ0i5i3rnKtyEsf7yM2aeolLoVSwvrkbmnbCu2V_gwVQOxFSy5cRDmm_n1x2E2lpE4ZyVRF1MnRguwBc-Eq1hspdW_BeFVAY1wtP8__eJ4N7zJ-P1UcGplTf3YlzxP62mtBpZWzz-EhkpR0f4rjCPFJZeVo4aR4hf9Y1o">
+</div>
+<p class="font-label-md text-label-md text-secondary italic">Screening process in action.</p>
+</div>
+<!-- Card 1 -->
+<div class="messy-card absolute inset-0 bg-white p-4 shadow-xl rounded-xl border border-surface-container-high -rotate-[1deg] translate-y-2 z-40 cursor-pointer" data-index="0" style="z-index: -1; transform: rotate(-1.2deg) translate(6.8px, 0.9px);">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD81RwDgKOfv4W2DhiBuFqNciw32Vdsp5RSR4wbn54qptNZzZTaCZRM069eQbbQhfv0LmNqTDPCdIRSzGLt2SoxQE7imm0cGD9YK-Y01BiZ0i5i3rnKtyEsf7yM2aeolLoVSwvrkbmnbCu2V_gwVQOxFSy5cRDmm_n1x2E2lpE4ZyVRF1MnRguwBc-Eq1hspdW_BeFVAY1wtP8__eJ4N7zJ-P1UcGplTf3YlzxP62mtBpZWzz-EhkpR0f4rjCPFJZeVo4aR4hf9Y1o">
+</div>
+<div class="flex justify-between items-center">
+<p class="font-label-md text-label-md text-secondary italic">The 100th screening milestone.</p>
+<span class="material-symbols-outlined text-primary-container">touch_app</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50">
+<button class="p-3 rounded-full bg-primary text-on-primary shadow-lg hover:scale-105 active:scale-95 transition-all" onclick="advanceStack()">
+<span class="material-symbols-outlined">refresh</span>
+</button>
+</div>
+</aside>
+</div>
+</section>
+<!-- Newsletter / Footer CTA -->
+<section class="py-24 bg-secondary-container">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-secondary-container mb-6">Stay informed on Richmond health.</h2>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mb-10 max-w-[500px] mx-auto">
+                    Join our monthly newsletter for clinic dates, volunteer stories, and health tips from our editorial team.
+                </p>
+<div class="flex justify-center"><a href="#" class="bg-on-background text-background px-12 py-4 rounded-2xl font-label-md text-label-md hover:bg-secondary transition-colors inline-block">Sign Up for Our Newsletter</a></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container py-20 px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Project Pulse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Empowering the community through student-led healthcare accessibility.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">FAQ</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+                © 2024 Project Pulse. Student-led health for Richmond, VA.
+            </p>
+</div>
+</footer>
+<script>
+        let currentZ = 40;
+        const stack = document.getElementById('card-stack');
+        
+        function advanceStack() {
+            const cards = Array.from(document.querySelectorAll('.messy-card'));
+            // Find the one with the highest current z-index
+            const topCard = cards.reduce((prev, current) => {
+                const prevZ = parseInt(window.getComputedStyle(prev).zIndex);
+                const currentZ = parseInt(window.getComputedStyle(current).zIndex);
+                return (currentZ > prevZ) ? current : prev;
+            });
+
+            // Add animation class
+            topCard.classList.add('sending-to-back');
+            
+            // After animation half-way, move to back and reset z-index
+            setTimeout(() => {
+                const minZ = Math.min(...cards.map(c => parseInt(window.getComputedStyle(c).zIndex)));
+                topCard.style.zIndex = (minZ - 1).toString();
+                topCard.classList.remove('sending-to-back');
+                
+                // Slightly randomize the rotation for that "messy" feel each time
+                const rot = (Math.random() * 10 - 5).toFixed(1);
+                const tx = (Math.random() * 20 - 10).toFixed(1);
+                const ty = (Math.random() * 20 - 10).toFixed(1);
+                topCard.style.transform = `rotate(${rot}deg) translate(${tx}px, ${ty}px)`;
+            }, 600);
+        }
+
+        // Add click listener to the stack
+        stack.addEventListener('click', advanceStack);
+
+        // Optional: Periodic advance for life
+        // setInterval(advanceStack, 5000);
+    </script>
+</body></html>

@@ -1,0 +1,4 @@
+export const LOGO_URL =
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuAaF6w_0_Gx4JOaQtpFLe4sZjgObcaGbC7aYJbsk7_iMNlH5KuQcLWpdLqb88uOpuhrcuCJkrisI6mCHydH3aQ7V6z7gfHYJ6WPZrWjcZdQlMHwpZUoolW21pyujDM89bjiBMryD_TC8f3zS3aE2S20UYXt_EQx1C7LU0jhxty65mcSLP4XahpEC4Wmm6XDRoO9ZmzgsyU0XV9Hrk69ltSn5nlWl7DkIvLVRjl1fl0BVIKGfGCJuj0aJ7YkwtmOkqCnimkSdFZGa-E'
+
+export const CONTACT_EMAIL = 'hello@projectpulserva.org'
