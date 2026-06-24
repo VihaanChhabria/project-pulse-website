@@ -37,7 +37,8 @@ export default function MissionSection() {
         <div className="mt-8 flex items-center">
           <a
             className="group flex items-center gap-2 text-secondary hover:text-primary transition-colors duration-300"
-            href="#"
+            href="https://www.instagram.com/projectpulse.rva/"
+            target="_blank"
           >
             <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container/20 transition-colors">
               <svg
