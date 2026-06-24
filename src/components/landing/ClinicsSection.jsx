@@ -1,28 +1,32 @@
 import FadeIn from "../FadeIn";
+import { buildGoogleCalendarUrl } from "../../utils/googleCalendar";
 
 const CLINICS = [
-  //
-  //  image:
-  //    'https://lh3.googleusercontent.com/aida-public/AB6AXuAWBG_rgdGBrOyTfs5WtW7txvOeom3CZRoN3QEEb8napOh5Ra_g-k7siIOFo8dV9qFow4b9clr3PSTV4VUEbJmW5Wmx3ZSKYp1nWO0hfzMY9TNAmSafjmY1UCH59JirurMfr0eIndJBslnslisiG_s1hXhfBIPbn3NSBQcVbAjyO_1ewu4UXQce4MD5uWOopIToO-gh33mRYg5Ps39uyxTpbyQfIzYqKN8vdcUmdTxRMvpdFNgbXc8OJ-3bU2FSiblgABikBeI75u0',
-  //  date: 'June 24, 2026',
-  //  title: 'Chimborazo Park Clinic',
-  //  services: [
-  //    'Blood Pressure Screening',
-  //    'Glucose & A1c Testing',
-  //  ],
-  //  time: '9:00 AM - 1:00 PM',
-  //},
-  //{
-  //  image:
-  //    'https://lh3.googleusercontent.com/aida-public/AB6AXuAsVNEbLtQ5iIezMS4h1Vj7o16Z2rvvwno3tgMuejdhgWPbMunFZX--uMjeEl8xAVDVn47Ysprlrhyn3SNrLDWpWMx89DPKIr3GWQXZ9B4x6j2JmgYa68bAzt715kUr9tMQforRt5b6w_J-OuHOFnd6Q9MYOSmgZmyJ4ZsT1Kq0GlZ5Gz0mvG360UxuC18V7RAffSQ4WaTZ2AobjaMN7jzQ4k6-3f5f7rLzIDLSel64zgAgoP5-PPs4TUIpBdzcsfKl9-RpnPulfak',
-  //  date: 'June 24, 2026',
-  //  title: 'Southside Library Clinic',
-  //  services: ['Blood Pressure Screening', 'Glucose & A1c Testing'],
-  //  time: '10:00 AM - 2:00 PM',
-  //},
+  {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAWBG_rgdGBrOyTfs5WtW7txvOeom3CZRoN3QEEb8napOh5Ra_g-k7siIOFo8dV9qFow4b9clr3PSTV4VUEbJmW5Wmx3ZSKYp1nWO0hfzMY9TNAmSafjmY1UCH59JirurMfr0eIndJBslnslisiG_s1hXhfBIPbn3NSBQcVbAjyO_1ewu4UXQce4MD5uWOopIToO-gh33mRYg5Ps39uyxTpbyQfIzYqKN8vdcUmdTxRMvpdFNgbXc8OJ-3bU2FSiblgABikBeI75u0",
+    date: "June 24, 2026",
+    title: "Monroe Park Clinic",
+    services: ["Blood Pressure Screening", "Glucose & A1c Testing"],
+    startTime: "9:00 AM",
+    endTime: "1:00 PM",
+    address: "620 W Main St, Richmond, VA 23220",
+    mapsUrl:
+      "https://maps.google.com/maps?client=firefox-b-1-d&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KYOycv1GEbGJMXamoxlMjD0y&daddr=620+W+Main+St,+Richmond,+VA+23220",
+    calendarStart: "20260624T090000",
+    calendarEnd: "20260624T130000",
+  },
 ];
 
 function ClinicCard({ clinic }) {
+  const calendarUrl = buildGoogleCalendarUrl({
+    title: clinic.title,
+    services: clinic.services,
+    address: clinic.address,
+    calendarStart: clinic.calendarStart,
+    calendarEnd: clinic.calendarEnd,
+  });
+
   return (
     <FadeIn className="clinic-card bg-surface flex flex-col md:flex-row rounded-[32px] overflow-hidden shadow-sm hover:shadow-lg">
       <div className="md:w-2/5 h-48 md:h-auto overflow-hidden">
@@ -48,12 +52,30 @@ function ClinicCard({ clinic }) {
             </div>
           ))}
         </div>
-        <p className="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+        <p className="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 pb-4">
           <span className="material-symbols-outlined text-[18px]">
             schedule
           </span>
-          {clinic.time}
+          {clinic.startTime} - {clinic.endTime}
         </p>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={clinic.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-sm text-label-sm btn-active inline-flex items-center gap-3"
+          >
+            View Location
+          </a>
+          <a
+            href={calendarUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-sm text-label-sm btn-active inline-flex items-center gap-3"
+          >
+            Add to Google Calendar
+          </a>
+        </div>
       </div>
     </FadeIn>
   );

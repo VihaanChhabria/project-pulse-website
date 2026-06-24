@@ -2,7 +2,7 @@ import { CONTACT_EMAIL } from "../../constants/brand";
 
 export default function GetInTouchSection() {
   return (
-    <section className="py-24 md:py-32 bg-background" id="get-in-touch">
+    <section className="py-24 md:py-32 bg-background" id="contact">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
