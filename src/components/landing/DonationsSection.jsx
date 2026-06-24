@@ -7,14 +7,16 @@ export default function DonationsSection() {
             Support Our Mission
           </h2>
           <p className="font-body-md text-body-md text-secondary">
-            100% of donations go directly toward medical supplies for Richmond
-            clinics. Your contribution makes a tangible difference in community
-            health.
+            Donations go directly toward supplies for clinics. Your contribution
+            makes a difference in community health.
           </p>
         </div>
         <div className="flex justify-center">
           <button
             type="button"
+            onClick={() => {
+              alert("Coming soon!");
+            }}
             className="px-12 py-4 bg-[#2D2926] text-white rounded-full font-label-md btn-active hover:shadow-xl transition-all"
           >
             Donate to Project Pulse
@@ -22,5 +24,5 @@ export default function DonationsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
