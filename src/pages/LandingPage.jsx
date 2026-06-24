@@ -7,7 +7,7 @@ import ExecutiveBoardSection from "../components/landing/ExecutiveBoardSection";
 import GetInTouchSection from "../components/landing/GetInTouchSection";
 import MissionSection from "../components/landing/MissionSection";
 import NewsSection from "../components/landing/NewsSection";
-import NewsletterSection from "../components/landing/NewsletterSection";
+// import NewsletterSection from "../components/landing/NewsletterSection";
 import VolunteerSection from "../components/landing/VolunteerSection";
 
 export default function LandingPage() {
@@ -25,7 +25,7 @@ export default function LandingPage() {
         <VolunteerSection />
       </main>
 
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
       <GetInTouchSection />
       <LandingFooter />
     </div>

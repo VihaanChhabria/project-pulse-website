@@ -1,6 +1,6 @@
 export default function DonationsSection() {
   return (
-    <section className="bg-surface-container-low py-24 md:py-32" id="donations">
+    <section className="bg-background py-24 md:py-32" id="donations">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">

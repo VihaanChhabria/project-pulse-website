@@ -30,7 +30,7 @@ export default function VolunteerSection() {
                 Apply as a Clinical Volunteer
               </button>
             </div>
-            <div className="bg-surface-container-high p-10 rounded-[32px] flex flex-col justify-between items-start">
+            <div className="bg-primary-container/10 p-10 rounded-[32px] flex flex-col justify-between items-start">
               <div>
                 <h3 className="font-headline-md text-headline-md text-on-background mb-4">
                   General & Student Volunteers
@@ -48,9 +48,55 @@ export default function VolunteerSection() {
                     "_blank",
                   );
                 }}
-                className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active"
+                className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-md btn-active"
               >
                 Apply as a General Volunteer
+              </button>
+            </div>
+            <div className="bg-surface-container-high p-10 rounded-[32px] flex flex-col justify-between items-start">
+              <div>
+                <h3 className="font-headline-md text-headline-md text-on-background mb-4">
+                  Join Our GroupMe
+                </h3>
+                <p className="font-body-md text-body-md text-secondary mb-8">
+                  Stay in the loop on clinic dates, volunteer shifts, and team
+                  updates.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  window.open(
+                    "https://groupme.com/join_group/111412217/Ufu6tsde",
+                    "_blank",
+                  );
+                }}
+                className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active"
+              >
+                Join GroupMe
+              </button>
+            </div>
+            <div className="bg-surface-container-high p-10 rounded-[32px] flex flex-col justify-between items-start">
+              <div>
+                <h3 className="font-headline-md text-headline-md text-on-background mb-4">
+                  Join on RamsConnect
+                </h3>
+                <p className="font-body-md text-body-md text-secondary mb-8">
+                  VCU students can officially join Project Pulse through
+                  RamsConnect to register as a member.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  window.open(
+                    "https://vcu.campusgroups.com/ProjectPulse/club_signup",
+                    "_blank",
+                  );
+                }}
+                className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active"
+              >
+                Join on RamsConnect
               </button>
             </div>
           </div>
