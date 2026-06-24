@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from '../../constants/brand'
+import { CONTACT_EMAIL } from "../../constants/brand";
 
 export default function GetInTouchSection() {
   return (
@@ -9,15 +9,17 @@ export default function GetInTouchSection() {
             Get in Touch
           </h2>
           <p className="font-body-md text-body-md text-secondary">
-            Whether you have questions about our clinics, want to partner with us,
-            or just want to say hello, we&apos;d love to hear from you.
+            Whether you have questions about our clinics, want to partner with
+            us, or just want to say hello, we&apos;d love to hear from you.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-surface-container p-10 rounded-[32px] flex flex-col justify-between items-start border-t-4 border-primary-container">
             <div>
               <div className="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-primary">mail</span>
+                <span className="material-symbols-outlined text-primary">
+                  mail
+                </span>
               </div>
               <h3 className="font-headline-md text-headline-md text-on-background mb-2">
                 Email Us
@@ -49,7 +51,9 @@ export default function GetInTouchSection() {
             </div>
             <a
               className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active inline-block"
-              href="#"
+              href={`https://www.instagram.com/projectpulse.rva/`}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Send a DM
             </a>
@@ -57,5 +61,5 @@ export default function GetInTouchSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
