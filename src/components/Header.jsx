@@ -5,7 +5,8 @@ import { LOGO_URL } from '../constants/brand'
 const NAV_ITEMS = [
   { label: 'Our Mission', to: '/#mission', hash: 'mission' },
   { label: 'Upcoming Clinics', to: '/#clinics', hash: 'clinics' },
-  { label: 'Latest News', to: '/news', route: 'news' },
+  //{ label: 'Latest News', to: '/news', route: 'news' },
+  { label: 'Latest News', to: '/', route: 'news' },
   { label: 'Volunteer', to: '/#volunteer', hash: 'volunteer' },
   { label: 'Contact', to: '/#contact', hash: 'contact' },
 ]
