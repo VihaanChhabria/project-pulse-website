@@ -1,6 +1,6 @@
 const MEMBERS = [
   {
-    name: "Diya Dipa",
+    name: "Diya Deepak",
     role: "President",
     school: "VCU Biology, Class of 2027",
   },
