@@ -7,7 +7,7 @@ export default function MissionSection() {
       id="mission"
     >
       <div className="space-y-8 max-w-[640px]">
-        <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm">
+        <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm bg-surface-container-low">
           Richmond, Virginia
         </div>
         <h1 className="font-display-lg text-[42px] leading-tight md:text-display-lg text-on-background font-medium">
