@@ -5,16 +5,16 @@ const CLINICS = [
   {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAWBG_rgdGBrOyTfs5WtW7txvOeom3CZRoN3QEEb8napOh5Ra_g-k7siIOFo8dV9qFow4b9clr3PSTV4VUEbJmW5Wmx3ZSKYp1nWO0hfzMY9TNAmSafjmY1UCH59JirurMfr0eIndJBslnslisiG_s1hXhfBIPbn3NSBQcVbAjyO_1ewu4UXQce4MD5uWOopIToO-gh33mRYg5Ps39uyxTpbyQfIzYqKN8vdcUmdTxRMvpdFNgbXc8OJ-3bU2FSiblgABikBeI75u0",
-    date: "June 24, 2026",
+    date: "October 24, 2026",
     title: "Monroe Park Clinic",
-    services: ["Blood Pressure Screening", "Glucose & A1c Testing"],
-    startTime: "9:00 AM",
-    endTime: "1:00 PM",
+    services: ["Basic Health Screening"],
+    startTime: "4:00 pm",
+    endTime: "6:00 PM",
     address: "620 W Main St, Richmond, VA 23220",
     mapsUrl:
       "https://maps.google.com/maps?client=firefox-b-1-d&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KYOycv1GEbGJMXamoxlMjD0y&daddr=620+W+Main+St,+Richmond,+VA+23220",
-    calendarStart: "20260624T090000",
-    calendarEnd: "20260624T130000",
+    calendarStart: "20261024T160000",
+    calendarEnd: "20261024T180000",
   },
 ];
 
