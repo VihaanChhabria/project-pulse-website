@@ -34,18 +34,18 @@ function ClinicCard({ clinic }) {
       </div>
       <div className="p-8 flex-1">
         <div className="flex items-center gap-2 mb-4">
-          <span className="text-secondary text-[12px]">{clinic.date}</span>
+          <span className="text-pulse-navy text-[12px]">{clinic.date}</span>
         </div>
-        <h3 className="font-headline-md text-headline-md text-on-background mb-4">
+        <h3 className="font-headline-md text-headline-md font-bold text-on-background mb-4">
           {clinic.title}
         </h3>
         <div className="space-y-2 mb-6">
           {clinic.services.map((item) => (
             <div
               key={item}
-              className="flex items-center gap-2 text-body-md text-secondary"
+              className="flex items-center gap-2 text-body-md text-on-background"
             >
-              <span className="material-symbols-outlined text-[18px] text-primary">
+              <span className="material-symbols-outlined text-[18px] text-pulse-navy">
                 check_circle
               </span>
               <span>{item}</span>
@@ -63,7 +63,7 @@ function ClinicCard({ clinic }) {
             href={clinic.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-sm text-label-sm btn-active inline-flex items-center gap-3"
+            className="px-8 py-4 bg-pulse-navy text-white rounded-[24px] font-label-sm text-label-sm btn-active inline-flex items-center gap-3"
           >
             View Location
           </a>
@@ -71,7 +71,7 @@ function ClinicCard({ clinic }) {
             href={calendarUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-sm text-label-sm btn-active inline-flex items-center gap-3"
+            className="px-8 py-4 bg-white border-[1.5px] border-pulse-navy text-pulse-navy rounded-[24px] font-label-sm text-label-sm btn-active inline-flex items-center gap-3"
           >
             Add to Google Calendar
           </a>
@@ -90,7 +90,7 @@ export default function ClinicsSection() {
             <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
               Upcoming Community Clinics
             </h2>
-            <p className="font-body-md text-body-md text-secondary">
+            <p className="font-body-md text-body-md text-on-background">
               Find us in your neighborhood. All screenings are free and open to
               the public. No insurance required.
             </p>
@@ -103,7 +103,7 @@ export default function ClinicsSection() {
             ))}
           </div>
         ) : (
-          <div className="text-center text-secondary">
+          <div className="text-center text-on-background">
             <p>
               No clinics scheduled yet. Please reach out to us if you'd like to
               schedule a clinic in your neighborhood.

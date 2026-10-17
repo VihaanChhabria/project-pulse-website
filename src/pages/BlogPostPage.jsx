@@ -71,12 +71,12 @@ export default function BlogPostPage() {
               to="/news"
               className="inline-flex items-center gap-2 font-label-md text-label-md text-primary mb-8 hover:gap-3 transition-all"
             >
-              <span className="material-symbols-outlined text-sm">arrow_back</span>
+              <span className="material-symbols-outlined text-sm text-pulse-navy">arrow_back</span>
               Back to News
             </Link>
             <div className="max-w-[800px]">
               <div className="flex items-center gap-4 mb-6">
-                <span className="bg-primary/10 text-primary px-4 py-1 rounded-full font-label-sm text-label-sm">
+                <span className="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-sm text-label-sm">
                   Community Milestone
                 </span>
                 <span className="text-on-surface-variant font-label-md text-label-md">
@@ -88,7 +88,7 @@ export default function BlogPostPage() {
               </h1>
               <div className="flex items-center gap-3 mb-12">
                 <div className="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
-                  <span className="material-symbols-outlined text-secondary">
+                  <span className="material-symbols-outlined text-pulse-navy">
                     edit_note
                   </span>
                 </div>
@@ -126,7 +126,7 @@ export default function BlogPostPage() {
                     'Connected high-risk patients directly with local primary care follow-ups.',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-primary mt-1">
+                      <span className="material-symbols-outlined text-pulse-navy mt-1">
                         check_circle
                       </span>
                       <p className="font-body-md text-body-md text-on-surface-variant">
@@ -182,11 +182,11 @@ export default function BlogPostPage() {
                             : undefined
                         }
                       >
-                        <p className="font-label-md text-label-md text-secondary italic">
+                        <p className="font-label-md text-label-md text-on-background italic">
                           {card.caption}
                         </p>
                         {card.showTouch && (
-                          <span className="material-symbols-outlined text-primary-container">
+                          <span className="material-symbols-outlined text-pulse-navy">
                             touch_app
                           </span>
                         )}
@@ -198,7 +198,7 @@ export default function BlogPostPage() {
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50">
                 <button
                   type="button"
-                  className="p-3 rounded-full bg-primary text-on-primary shadow-lg hover:scale-105 active:scale-95 transition-all"
+                  className="p-3 rounded-full bg-pulse-navy text-white shadow-lg hover:scale-105 active:scale-95 transition-all"
                   onClick={advanceStack}
                   aria-label="Next photo"
                 >
@@ -221,7 +221,7 @@ export default function BlogPostPage() {
             <div className="flex justify-center">
               <a
                 href="#"
-                className="bg-on-background text-background px-12 py-4 rounded-2xl font-label-md text-label-md hover:bg-secondary transition-colors inline-block"
+                className="bg-pulse-navy text-white px-12 py-4 rounded-2xl font-label-md text-label-md hover:bg-white hover:text-pulse-navy transition-colors inline-block"
               >
                 Sign Up for Our Newsletter
               </a>

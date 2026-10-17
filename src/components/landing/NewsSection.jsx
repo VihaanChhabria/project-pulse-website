@@ -53,17 +53,17 @@ function StoryCard({ story }) {
         />
       </div>
       <div className="p-8">
-        <span className="font-label-sm text-label-sm text-primary uppercase mb-2 block">
+        <span className="font-label-sm text-label-sm text-pulse-navy uppercase mb-2 block">
           {story.category}
         </span>
-        <h4 className="font-headline-md text-headline-md text-on-background mb-3">
+        <h4 className="font-headline-md text-headline-md font-bold text-pulse-navy mb-3">
           {story.title}
         </h4>
-        <p className="font-body-md text-body-md text-secondary mb-6">
+        <p className="font-body-md text-body-md text-on-background mb-6 leading-relaxed">
           {story.description}
         </p>
         <Link
-          className="font-label-md text-label-md text-primary hover:underline"
+          className="font-label-md text-label-md text-pulse-navy hover:text-primary hover:underline"
           to={story.linkTo}
         >
           {story.linkText}
@@ -77,7 +77,7 @@ export default function NewsSection() {
   return (
     <section className="py-24 md:py-32" id="news">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop ">
-        <p className="font-body-lg text-body-lg text-center text-[#FF0000] font-bold">
+        <p className="font-body-lg text-body-lg text-center text-pulse-red font-bold">
           -------------------- news section not ready --------------------
         </p>
       </div>
@@ -86,7 +86,7 @@ export default function NewsSection() {
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
             Impact & Updates
           </h2>
-          <p className="font-body-md text-body-md text-secondary">
+          <p className="font-body-md text-body-md text-on-background leading-relaxed">
             Reflecting on our journey to make Richmond a healthier, more
             equitable city for everyone.
           </p>
@@ -100,7 +100,7 @@ export default function NewsSection() {
 
         <FadeIn large className="flex justify-center mt-12">
           <Link
-            className="inline-flex items-center gap-2 px-8 py-3 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-full font-label-md text-label-md btn-active hover:bg-surface-container-low transition-all"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white border-[1.5px] border-pulse-navy text-pulse-navy rounded-full font-label-md text-label-md btn-active hover:bg-pulse-ice transition-all"
             //to="/news"
             to="/"
           >

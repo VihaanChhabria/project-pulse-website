@@ -40,15 +40,15 @@ export default function ExecutiveBoardSection() {
               className="flex flex-col items-center text-center group"
             >
               <div className="w-32 h-32 rounded-[24px] bg-surface-container-high flex items-center justify-center mb-6 overflow-hidden">
-                <span className="material-symbols-outlined text-[64px] text-on-surface-variant/70">
+                <span className="material-symbols-outlined text-[64px] text-on-surface-variant">
                   person
                 </span>
               </div>
-              <h4 className="font-headline-md text-[20px] text-[#2D2926] mb-1">
+              <h4 className="font-headline-md text-[20px] text-pulse-navy font-bold mb-1">
                 {member.name}
               </h4>
-              <p className="font-label-md text-primary mb-2">{member.role}</p>
-              <p className="font-body-md text-secondary text-[14px]">
+              <p className="font-label-md text-pulse-navy font-bold mb-2">{member.role}</p>
+              <p className="font-body-md text-on-background text-[14px] leading-relaxed">
                 {member.school}
               </p>
             </div>

@@ -7,12 +7,12 @@ export default function VolunteerSection() {
             Join the Pulse Team
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-primary-container/10 p-10 rounded-[32px] flex flex-col justify-between items-start">
+            <div className="bg-pulse-ice p-10 rounded-[32px] flex flex-col justify-between items-start">
               <div>
                 <h3 className="font-headline-md text-headline-md text-on-background mb-4">
                   Licensed & Certified Volunteers
                 </h3>
-                <p className="font-body-md text-body-md text-secondary mb-8">
+                <p className="font-body-md text-body-md text-on-background mb-8 leading-relaxed">
                   We are looking for EMT, CNA, RN, medical students, etc. to
                   help in our clinics.
                 </p>
@@ -25,17 +25,17 @@ export default function VolunteerSection() {
                     "_blank",
                   );
                 }}
-                className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-md btn-active"
+                className="px-8 py-4 bg-pulse-navy text-white rounded-[24px] font-label-md btn-active"
               >
                 Apply as a Clinical Volunteer
               </button>
             </div>
-            <div className="bg-primary-container/10 p-10 rounded-[32px] flex flex-col justify-between items-start">
+            <div className="bg-pulse-ice p-10 rounded-[32px] flex flex-col justify-between items-start">
               <div>
                 <h3 className="font-headline-md text-headline-md text-on-background mb-4">
                   General & Student Volunteers
                 </h3>
-                <p className="font-body-md text-body-md text-secondary mb-8">
+                <p className="font-body-md text-body-md text-on-background mb-8 leading-relaxed">
                   We are looking for general volunteers to help with logistics,
                   patient intake, and health education.
                 </p>
@@ -48,7 +48,7 @@ export default function VolunteerSection() {
                     "_blank",
                   );
                 }}
-                className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-md btn-active"
+                className="px-8 py-4 bg-pulse-navy text-white rounded-[24px] font-label-md btn-active"
               >
                 Apply as a General Volunteer
               </button>
@@ -58,7 +58,7 @@ export default function VolunteerSection() {
                 <h3 className="font-headline-md text-headline-md text-on-background mb-4">
                   Join Our GroupMe
                 </h3>
-                <p className="font-body-md text-body-md text-secondary mb-8">
+                <p className="font-body-md text-body-md text-on-background mb-8 leading-relaxed">
                   Stay in the loop on clinic dates, volunteer shifts, and team
                   updates.
                 </p>
@@ -71,7 +71,7 @@ export default function VolunteerSection() {
                     "_blank",
                   );
                 }}
-                className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active"
+                className="px-8 py-4 bg-white border-[1.5px] border-pulse-navy text-pulse-navy rounded-[24px] font-label-md btn-active"
               >
                 Join GroupMe
               </button>
@@ -81,7 +81,7 @@ export default function VolunteerSection() {
                 <h3 className="font-headline-md text-headline-md text-on-background mb-4">
                   Join on RamsConnect
                 </h3>
-                <p className="font-body-md text-body-md text-secondary mb-8">
+                <p className="font-body-md text-body-md text-on-background mb-8 leading-relaxed">
                   VCU students can officially join Project Pulse through
                   RamsConnect to register as a member.
                 </p>
@@ -94,7 +94,7 @@ export default function VolunteerSection() {
                     "_blank",
                   );
                 }}
-                className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active"
+                className="px-8 py-4 bg-white border-[1.5px] border-pulse-navy text-pulse-navy rounded-[24px] font-label-md btn-active"
               >
                 Join on RamsConnect
               </button>

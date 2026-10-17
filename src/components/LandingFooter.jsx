@@ -34,13 +34,13 @@ export default function LandingFooter() {
       </div>
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-surface-variant/50 text-center md:text-left">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-          <p className="font-body-md text-body-md text-on-surface-variant/70">
+          <p className="font-body-md text-body-md text-on-surface-variant">
             © 2024 Project Pulse. Student-led health for Richmond, VA.
           </p>
-          <p className="font-body-md text-body-md text-on-surface-variant/70">
+          <p className="font-body-md text-body-md text-on-surface-variant">
             Website made by{" "}
             <a
-              className="text-primary hover:underline font-bold"
+              className="text-pulse-navy hover:underline font-bold"
               href="https://vihaanc.netlify.app/"
               rel="noopener noreferrer"
               target="_blank"

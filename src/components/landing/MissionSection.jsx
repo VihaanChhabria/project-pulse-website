@@ -14,7 +14,7 @@ export default function MissionSection() {
           Free, accessible health screenings that{' '}
           <span className="text-primary italic">put community first</span>.
         </h1>
-        <p className="font-body-lg text-body-lg text-secondary leading-relaxed">
+        <p className="font-body-lg text-body-lg text-on-background leading-relaxed">
           Project Pulse is a student-led initiative dedicated to bridging the
           health equity gap in Richmond. We provide essential screenings,
           education, and referrals to underserved neighborhoods through pop-up
@@ -23,20 +23,20 @@ export default function MissionSection() {
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Link
             to="/#clinics"
-            className="px-8 py-4 bg-[#2D2926] text-[#F9F8F3] rounded-[24px] font-label-md text-label-md btn-active hover:shadow-xl transition-all text-center"
+            className="px-8 py-4 bg-pulse-navy text-white rounded-[24px] font-label-md text-label-md btn-active hover:shadow-xl transition-all text-center"
           >
             Find a Clinic
           </Link>
           <Link
             to="/#volunteer"
-            className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md text-label-md btn-active hover:bg-surface-container-low transition-all text-center"
+            className="px-8 py-4 bg-white border-[1.5px] border-pulse-navy text-pulse-navy rounded-[24px] font-label-md text-label-md btn-active hover:bg-pulse-ice transition-all text-center"
           >
             Volunteer with Us
           </Link>
         </div>
         <div className="mt-8 flex items-center">
           <a
-            className="group flex items-center gap-2 text-secondary hover:text-primary transition-colors duration-300"
+            className="group flex items-center gap-2 text-on-background hover:text-primary transition-colors duration-300"
             href="https://www.instagram.com/projectpulse.rva/"
             target="_blank"
           >

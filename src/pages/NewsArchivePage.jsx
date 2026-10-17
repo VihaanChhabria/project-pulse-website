@@ -69,26 +69,26 @@ function StoryCard({ story }) {
           />
         ) : (
           <div
-            className={`w-full h-full flex items-center justify-center p-8 ${story.icon === 'volunteer_activism' ? 'bg-sage/10' : 'bg-tertiary-fixed/30'}`}
+            className={`w-full h-full flex items-center justify-center p-8 ${story.icon === 'volunteer_activism' ? 'bg-pulse-blue/10' : 'bg-pulse-ice/30'}`}
           >
             <div className="text-center opacity-40 group-hover:opacity-100 transition-opacity">
-              <span className="material-symbols-outlined text-6xl text-primary">
+              <span className="material-symbols-outlined text-6xl text-pulse-navy">
                 {story.icon}
               </span>
             </div>
           </div>
         )}
         <div className="absolute top-6 left-6">
-          <span className="bg-white/90 backdrop-blur-sm px-4 py-1 rounded-full font-label-sm text-label-sm text-espresso">
+          <span className="bg-secondary-container/90 backdrop-blur-sm px-4 py-1 rounded-full font-label-sm text-label-sm text-on-secondary-container">
             {story.category}
           </span>
         </div>
       </div>
       <div className="p-8 flex flex-col flex-grow">
-        <span className="text-label-sm font-label-sm text-on-surface-variant/60 mb-4 uppercase tracking-tighter">
+        <span className="text-label-sm font-label-sm text-on-surface-variant mb-4 uppercase tracking-tighter">
           {story.date}
         </span>
-        <h3 className="font-headline-md text-headline-md text-espresso mb-4 leading-snug group-hover:text-primary transition-colors">
+        <h3 className="font-headline-md text-headline-md font-bold text-pulse-navy mb-4 leading-snug group-hover:text-primary transition-colors">
           {story.title}
         </h3>
         <p className="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
@@ -96,7 +96,7 @@ function StoryCard({ story }) {
         </p>
         <div className="mt-auto">
           <Link
-            className="inline-flex items-center gap-2 font-label-md text-label-md text-espresso group-hover:gap-4 transition-all"
+            className="inline-flex items-center gap-2 font-label-md text-label-md text-pulse-navy group-hover:gap-4 transition-all"
             to={linkTo}
           >
             Read Story
@@ -139,7 +139,7 @@ export default function NewsArchivePage() {
       <main>
         <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
           <div className="max-w-[720px] mx-auto px-margin-mobile md:px-0 text-center">
-            <h1 className="font-display-lg text-display-lg md:text-[64px] md:leading-[1.1] text-espresso mb-8">
+            <h1 className="font-display-lg text-display-lg md:text-[64px] md:leading-[1.1] text-pulse-navy mb-8">
               Latest News & Stories
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[600px] mx-auto">
@@ -162,9 +162,9 @@ export default function NewsArchivePage() {
 
             <article
               data-archive-card
-              className="lg:col-span-1 bg-espresso rounded-card overflow-hidden p-8 flex flex-col justify-center text-background"
+              className="lg:col-span-1 bg-pulse-navy rounded-card overflow-hidden p-8 flex flex-col justify-center text-background"
             >
-              <h3 className="font-headline-md text-headline-md mb-4">Stay Informed</h3>
+              <h3 className="font-headline-md text-headline-md font-bold mb-4">Stay Informed</h3>
               <p className="font-body-md text-body-md opacity-80 mb-8">
                 Join 1,200+ neighbors receiving our monthly health dispatch and
                 clinic schedule.
@@ -172,7 +172,7 @@ export default function NewsArchivePage() {
               <div className="mt-auto">
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center w-full bg-sage text-espresso py-3 rounded-full font-label-md text-label-md font-bold transition-all hover:bg-white active:scale-95"
+                  className="inline-flex items-center justify-center w-full bg-white text-pulse-navy py-3 rounded-full font-label-md text-label-md font-bold transition-all hover:bg-pulse-ice active:scale-95"
                 >
                   Join Our Mailing List
                   <span className="material-symbols-outlined ml-2 text-sm">
@@ -186,7 +186,7 @@ export default function NewsArchivePage() {
           <div className="mt-24 flex justify-center items-center gap-4">
             <button
               type="button"
-              className="w-12 h-12 rounded-full border border-outline/20 flex items-center justify-center hover:bg-surface-container-high transition-colors"
+              className="w-12 h-12 rounded-full bg-white border border-pulse-navy text-pulse-navy flex items-center justify-center hover:bg-pulse-ice transition-colors"
             >
               <span className="material-symbols-outlined">chevron_left</span>
             </button>
@@ -195,7 +195,7 @@ export default function NewsArchivePage() {
             </span>
             <button
               type="button"
-              className="w-12 h-12 rounded-full border border-outline/20 flex items-center justify-center hover:bg-surface-container-high transition-colors"
+              className="w-12 h-12 rounded-full bg-white border border-pulse-navy text-pulse-navy flex items-center justify-center hover:bg-pulse-ice transition-colors"
             >
               <span className="material-symbols-outlined">chevron_right</span>
             </button>

@@ -1,4 +1,5 @@
 export const LOGO_URL =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuAaF6w_0_Gx4JOaQtpFLe4sZjgObcaGbC7aYJbsk7_iMNlH5KuQcLWpdLqb88uOpuhrcuCJkrisI6mCHydH3aQ7V6z7gfHYJ6WPZrWjcZdQlMHwpZUoolW21pyujDM89bjiBMryD_TC8f3zS3aE2S20UYXt_EQx1C7LU0jhxty65mcSLP4XahpEC4Wmm6XDRoO9ZmzgsyU0XV9Hrk69ltSn5nlWl7DkIvLVRjl1fl0BVIKGfGCJuj0aJ7YkwtmOkqCnimkSdFZGa-E'
+  //   'https://lh3.googleusercontent.com/aida-public/AB6AXuAaF6w_0_Gx4JOaQtpFLe4sZjgObcaGbC7aYJbsk7_iMNlH5KuQcLWpdLqb88uOpuhrcuCJkrisI6mCHydH3aQ7V6z7gfHYJ6WPZrWjcZdQlMHwpZUoolW21pyujDM89bjiBMryD_TC8f3zS3aE2S20UYXt_EQx1C7LU0jhxty65mcSLP4XahpEC4Wmm6XDRoO9ZmzgsyU0XV9Hrk69ltSn5nlWl7DkIvLVRjl1fl0BVIKGfGCJuj0aJ7YkwtmOkqCnimkSdFZGa-E'
+  "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-19/777899022_17898975066561502_8428718038553536695_n.jpg?_nc_cat=107&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=Aa5xNb3lImAQ7kNvwEOo6ji&_nc_oc=Adqe0OIcZwnsq8wQSahETdhxzjXuIMV-Arb7FBJl_efUrJbowlrMXSSOYlh0r1FF6kE&_nc_zt=24&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_gid=V6Foo103bDqwSo39ibl54g&_nc_ss=7aaaf&oh=00_AQNaqQxj3ivdHyDndV5z9GTENeAkNsBM9IPgsYFqkdHPWw&oe=6AD88B57";
 
-export const CONTACT_EMAIL = 'email@gmail.com'
+export const CONTACT_EMAIL = "projectpulse.rva@gmail.com";

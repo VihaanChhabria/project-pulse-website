@@ -8,7 +8,7 @@ export default function GetInTouchSection() {
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
             Get in Touch
           </h2>
-          <p className="font-body-md text-body-md text-secondary">
+          <p className="font-body-md text-body-md text-on-background">
             Whether you have questions about our clinics, want to partner with
             us, or just want to say hello, we&apos;d love to hear from you.
           </p>
@@ -17,19 +17,19 @@ export default function GetInTouchSection() {
           <div className="bg-surface-container p-10 rounded-[32px] flex flex-col justify-between items-start border-t-4 border-primary-container">
             <div>
               <div className="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-primary">
+                <span className="material-symbols-outlined text-pulse-navy">
                   mail
                 </span>
               </div>
               <h3 className="font-headline-md text-headline-md text-on-background mb-2">
                 Email Us
               </h3>
-              <p className="font-body-lg text-body-lg text-secondary mb-8">
+              <p className="font-body-lg text-body-lg text-on-background mb-8 leading-relaxed">
                 {CONTACT_EMAIL}
               </p>
             </div>
             <a
-              className="px-8 py-4 bg-[#2D2926] text-white rounded-[24px] font-label-md btn-active inline-block"
+              className="px-8 py-4 bg-pulse-navy text-white rounded-[24px] font-label-md btn-active inline-block"
               href={`mailto:${CONTACT_EMAIL}`}
             >
               Send an Email
@@ -38,19 +38,19 @@ export default function GetInTouchSection() {
           <div className="bg-surface-container p-10 rounded-[32px] flex flex-col justify-between items-start border-t-4 border-primary-container">
             <div>
               <div className="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-primary">
+                <span className="material-symbols-outlined text-pulse-navy">
                   chat_bubble
                 </span>
               </div>
               <h3 className="font-headline-md text-headline-md text-on-background mb-2">
                 Instagram
               </h3>
-              <p className="font-body-lg text-body-lg text-secondary mb-8">
+              <p className="font-body-lg text-body-lg text-on-background mb-8 leading-relaxed">
                 Reach out on Instagram
               </p>
             </div>
             <a
-              className="px-8 py-4 border-[1.5px] border-[#2D2926] text-[#2D2926] rounded-[24px] font-label-md btn-active inline-block"
+              className="px-8 py-4 bg-white border-[1.5px] border-pulse-navy text-pulse-navy rounded-[24px] font-label-md btn-active inline-block"
               href={`https://www.instagram.com/projectpulse.rva/`}
               target="_blank"
               rel="noopener noreferrer"

@@ -15,7 +15,7 @@ function navClassName(isActive) {
   const base =
     'font-label-md text-label-md transition-colors'
   if (isActive) {
-    return `${base} text-primary font-bold border-b-2 border-primary pb-1`
+    return `${base} text-pulse-navy font-bold border-b-2 border-secondary pb-1`
   }
   return `${base} text-on-background hover:text-primary`
 }
